@@ -1,0 +1,59 @@
+{
+ "dataset": "ciaodvd",
+ "users": 4659,
+ "trust_records": 34113,
+ "reviews_ingested": 34438,
+ "ingest_s": 0.20666319993324578,
+ "update_trust": {
+  "mean_us": 2.869888303759756,
+  "p50_us": 2.600019797682762,
+  "p99_us": 5.500041879713535,
+  "n": 34113
+ },
+ "update_review": {
+  "mean_us": 1.9107468358781188,
+  "p50_us": 1.700012944638729,
+  "p99_us": 3.600027412176132,
+  "n": 34438
+ },
+ "query_features": {
+  "mean_us": 50.75642489828169,
+  "p50_us": 25.999965146183968,
+  "p99_us": 278.201022883877,
+  "n": 20000
+ },
+ "gbm_us_per_pair_batch": 4.858125001192093,
+ "gbm_single": {
+  "mean_us": 823.7554976949468,
+  "p50_us": 864.4499466754496,
+  "p99_us": 1038.8889920432118,
+  "n": 200
+ },
+ "state_rss_mb": 11.1875,
+ "dense_state": {
+  "build_s": 0.24769839993678033,
+  "gpu_peak_mb": 363.65966796875,
+  "note": "rebuilt from scratch for any change (A^2 recomputed)"
+ },
+ "tgn_update": {
+  "batch1": {
+   "mean_us": 9724.675791068492,
+   "p50_us": 8790.850057266653,
+   "p99_us": 16798.649959964678,
+   "n": 190
+  },
+  "batch200": {
+   "mean_us": 326.98294470748425,
+   "p50_us": 308.9774996624328,
+   "p99_us": 494.1367702849668,
+   "n": 190
+  },
+  "note": "memory+neighbour-store update per event (GPU); untrained weights (latency independent of weights)"
+ },
+ "cat_refresh": {
+  "refresh_1pair_s": 0.06655109999701381,
+  "score_all_test_pos_s": 0.04080509999766946,
+  "n_test_pos": 6020,
+  "note": "graph conversion + full heterogeneous forward pass; untrained weights"
+ }
+}

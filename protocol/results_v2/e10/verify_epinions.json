@@ -1,0 +1,200 @@
+{
+ "dataset": "epinions",
+ "n_pairs": 5000,
+ "per_feature": {
+  "log_out_u": {
+   "max_abs": 2.3200623378016871e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_in_u": {
+   "max_abs": 2.3200623378016871e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_out_v": {
+   "max_abs": 2.358178647909881e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_in_v": {
+   "max_abs": 2.358178647909881e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_pa": {
+   "max_abs": 4.767209844658282e-07,
+   "max_rel": 5.74180469940553e-08,
+   "nan_mismatch": 0
+  },
+  "recip": {
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "nan_mismatch": 0
+  },
+  "log_a2": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_a3": {
+   "max_abs": 4.7457637286640875e-07,
+   "max_rel": 5.819974055317084e-08,
+   "nan_mismatch": 0
+  },
+  "a2_norm_u": {
+   "max_abs": 2.8906973592590646e-08,
+   "max_rel": 5.913898000454151e-08,
+   "nan_mismatch": 0
+  },
+  "a2_norm_v": {
+   "max_abs": 2.9547601698709514e-08,
+   "max_rel": 5.8611230623463506e-08,
+   "nan_mismatch": 0
+  },
+  "a3_norm": {
+   "max_abs": 2.9574823701139508e-08,
+   "max_rel": 5.84800254498349e-08,
+   "nan_mismatch": 0
+  },
+  "log_coout": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "coout_norm": {
+   "max_abs": 2.8445961086642768e-08,
+   "max_rel": 1.0070750158946019e-07,
+   "nan_mismatch": 0
+  },
+  "log_coin": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "coin_norm": {
+   "max_abs": 2.8445961086642768e-08,
+   "max_rel": 1.0070750158946019e-07,
+   "nan_mismatch": 0
+  },
+  "log_cn": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "aa": {
+   "max_abs": 3.5700007288141933e-06,
+   "max_rel": 1.558029335519811e-07,
+   "nan_mismatch": 0
+  },
+  "ra": {
+   "max_abs": 1.1276095834844568e-07,
+   "max_rel": 1.2881311049763938e-07,
+   "nan_mismatch": 0
+  },
+  "jacc": {
+   "max_abs": 1.2688117445591729e-08,
+   "max_rel": 5.913898000454151e-08,
+   "nan_mismatch": 0
+  },
+  "log_rec_in_v": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_rec_out_u": {
+   "max_abs": 2.2118520615066473e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "rec_in_frac_v": {
+   "max_abs": 5.6467558184891686e-08,
+   "max_rel": 5.774199634753249e-08,
+   "nan_mismatch": 0
+  },
+  "days_since_u": {
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "nan_mismatch": 0
+  },
+  "days_since_v": {
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "nan_mismatch": 0
+  },
+  "age_u": {
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "nan_mismatch": 0
+  },
+  "age_v": {
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "nan_mismatch": 0
+  },
+  "log_nrev_u": {
+   "max_abs": 2.3406041727014326e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "log_nrev_v": {
+   "max_abs": 2.3406041727014326e-07,
+   "max_rel": 5.260436720042446e-08,
+   "nan_mismatch": 0
+  },
+  "rating_v": {
+   "max_abs": 2.3670333781922182e-07,
+   "max_rel": 5.838822682637653e-08,
+   "nan_mismatch": 0
+  },
+  "rating_u": {
+   "max_abs": 2.3670333781922182e-07,
+   "max_rel": 5.73121552215137e-08,
+   "nan_mismatch": 0
+  },
+  "help_v": {
+   "max_abs": 1.183391487025176e-07,
+   "max_rel": 5.73121552215137e-08,
+   "nan_mismatch": 0
+  },
+  "cat_cos": {
+   "max_abs": 1.0143469852952336e-07,
+   "max_rel": 1.611214259750704e-07,
+   "nan_mismatch": 0
+  },
+  "log_coreview": {
+   "max_abs": 1.401206484175077e-07,
+   "max_rel": 3.298124278262588e-08,
+   "nan_mismatch": 0
+  },
+  "log_vfirst": {
+   "max_abs": 8.806123608096073e-08,
+   "max_rel": 3.251464940471843e-08,
+   "nan_mismatch": 0
+  },
+  "log_ufirst": {
+   "max_abs": 7.013180303161448e-08,
+   "max_rel": 2.717843710744753e-08,
+   "nan_mismatch": 0
+  },
+  "coreview_norm": {
+   "max_abs": 7.466472551342918e-09,
+   "max_rel": 5.9261123122026465e-08,
+   "nan_mismatch": 0
+  },
+  "rating_diff": {
+   "max_abs": 9.536743172944284e-08,
+   "max_rel": 5.2981903647595814e-08,
+   "nan_mismatch": 0
+  }
+ },
+ "worst": [
+  "cat_cos",
+  {
+   "max_abs": 1.0143469852952336e-07,
+   "max_rel": 1.611214259750704e-07,
+   "nan_mismatch": 0
+  }
+ ],
+ "all_within_1e4_rel": true
+}

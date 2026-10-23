@@ -1,0 +1,37 @@
+{
+ "dataset": "epinions_full",
+ "users": 12134,
+ "items_seen": 283762,
+ "trust_records": 293910,
+ "interactions": 831401,
+ "helpfulness_votes": 0,
+ "parse_s": 5.914218902587891,
+ "ingest_s": 5.416254400042817,
+ "update_trust": {
+  "mean_us": 5.110349810385738,
+  "p50_us": 4.00003045797348,
+  "p99_us": 9.699957445263863,
+  "n": 293910
+ },
+ "update_interaction": {
+  "mean_us": 3.3348806592562976,
+  "p50_us": 2.300017513334751,
+  "p99_us": 6.200047209858894,
+  "n": 831401
+ },
+ "query_random_pair": {
+  "mean_us": 38.72113964171149,
+  "p50_us": 27.699978090822697,
+  "p99_us": 220.51004809327264,
+  "n": 20000
+ },
+ "query_trust_pair": {
+  "mean_us": 338.81890522898175,
+  "p50_us": 185.84995996207,
+  "p99_us": 1933.0010504927484,
+  "n": 20000
+ },
+ "state_rss_mb": 173.41796875,
+ "dense_state_gb_required": 2.1939569115638733,
+ "note": "trust records have no timestamp in these releases; placed at uniform random times for this measurement"
+}

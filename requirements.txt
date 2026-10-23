@@ -1,0 +1,12 @@
+# install torch / torch-geometric / pyg-lib / torch-scatter / torch-sparse / dgl first (see README)
+numpy<2
+scipy
+scikit-learn
+pandas
+lightgbm==4.7.0
+matplotlib
+psutil
+tqdm
+pyyaml
+pydantic
+requests

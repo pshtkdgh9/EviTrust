@@ -1,0 +1,59 @@
+{
+ "dataset": "epinions",
+ "users": 9164,
+ "trust_records": 264514,
+ "reviews_ingested": 243563,
+ "ingest_s": 1.6139852999476716,
+ "update_trust": {
+  "mean_us": 2.695371150863762,
+  "p50_us": 2.400018274784088,
+  "p99_us": 5.300040356814861,
+  "n": 264514
+ },
+ "update_review": {
+  "mean_us": 2.417799489085721,
+  "p50_us": 2.100015990436077,
+  "p99_us": 4.899920895695686,
+  "n": 243563
+ },
+ "query_features": {
+  "mean_us": 249.96659973985516,
+  "p50_us": 32.20001235604286,
+  "p99_us": 2326.571019366372,
+  "n": 20000
+ },
+ "gbm_us_per_pair_batch": 4.343655001139268,
+ "gbm_single": {
+  "mean_us": 826.6189991263673,
+  "p50_us": 862.6000490039587,
+  "p99_us": 1194.0060055349015,
+  "n": 200
+ },
+ "state_rss_mb": 96.1953125,
+ "dense_state": {
+  "build_s": 0.5694042999530211,
+  "gpu_peak_mb": 1314.5732421875,
+  "note": "rebuilt from scratch for any change (A^2 recomputed)"
+ },
+ "tgn_update": {
+  "batch1": {
+   "mean_us": 9034.996316155517,
+   "p50_us": 7586.799969431013,
+   "p99_us": 13888.27904127537,
+   "n": 190
+  },
+  "batch200": {
+   "mean_us": 323.71598947180536,
+   "p50_us": 298.37724985554814,
+   "p99_us": 537.1214595332274,
+   "n": 190
+  },
+  "note": "memory+neighbour-store update per event (GPU); untrained weights (latency independent of weights)"
+ },
+ "cat_refresh": {
+  "refresh_1pair_s": 0.06465389998629689,
+  "score_all_test_pos_s": 0.40573989995755255,
+  "n_test_pos": 46644,
+  "note": "graph conversion + full heterogeneous forward pass; untrained weights"
+ }
+}
