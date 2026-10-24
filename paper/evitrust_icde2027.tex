@@ -115,24 +115,8 @@ CAT (re-trained) & 0.9377 & 0.5790 & 0.4393 \\
 
 \begin{figure*}[t]
 \centering
-\begin{tikzpicture}[font=\footnotesize, >=Stealth,
-  box/.style={draw=black!55, rounded corners=2pt, align=center, inner sep=4pt, minimum height=1.05cm, fill=black!3},
-  acc/.style={draw=blue!60!black, rounded corners=2pt, align=center, inner sep=4pt, minimum height=1.05cm, fill=blue!6},
-  lab/.style={font=\scriptsize, text=black!60}]
-\node[box, text width=2.2cm] (s) {trust records $(u\!\to\!v,t)$\\ reviews $(u,i,r,h,t)$\\ \textit{event streams}};
-\node[acc, text width=3.1cm, right=0.85cm of s] (st) {\textbf{incremental state} $\mathcal{S}_\tau$\\ adjacency sets, time lists,\\ activity, item maps\\ $O(1)$ per record};
-\node[acc, text width=3.0cm, right=0.85cm of st] (f) {\textbf{evidence features} $\phi(u,v;\mathcal{S}_\tau)$\\ F1 popularity, F2 directed\\ proximity, F3 momentum,\\ F4 review behaviour};
-\node[box, text width=2.3cm, right=0.6cm of f] (g) {\textbf{GBDT} score\\ (LightGBM)};
-\node[box, text width=1.7cm, right=0.6cm of g] (o) {trust score\\ for $(u,v)$\\ after $\tau$};
-\draw[->] (s) -- node[lab, above]{ingest} (st);
-\draw[->] (st) -- node[lab, above]{query} (f);
-\draw[->] (f) -- (g);
-\draw[->] (g) -- (o);
-\node[box, text width=7.6cm, below=0.42cm of f.south west, anchor=north west, xshift=-1.9cm, minimum height=0.8cm] (tr)
-  {\textbf{training}: label windows $(\tau_{k-1},\tau_k]$ featurized from $\mathcal{S}_{\tau_{k-1}}$; negatives uniform : degree-matched : two-hop $=\rho$;\quad \eviU{}: $\rho=1{:}0{:}0$,\quad \eviV{}: $\rho$ chosen on validation};
-\draw[->, dashed] (tr.north -| g.south) -- (g.south);
-\end{tikzpicture}
-\caption{\evi{} pipeline. Records update a per-user state in $O(1)$; a pair is scored from 37 evidence features computed on demand from the state at prediction time $\tau$. The two operating points differ only in the training negatives.}
+\includegraphics[width=\textwidth]{fig1.png}
+\caption{\evi{} overview. (a) Trust records and reviews update a per-user platform state $\mathcal{S}_\tau$ in $O(1)$ per record; for a candidate pair $(u,v)$, 37 evidence features in four families (F1--F4) are computed on demand from $\mathcal{S}_\tau$ and scored by LightGBM. (b) Leakage-safe training: positives are the new trust pairs of a label window $(\tau_{k-1},\tau_k]$, featurized from the snapshot $\mathcal{S}_{\tau_{k-1}}$; negatives are drawn from three generators in ratio $\rho$. \eviU{} and \eviV{} share features and model family and differ only in $\rho$.}
 \label{fig:pipeline}
 \end{figure*}
 
