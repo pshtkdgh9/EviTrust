@@ -275,8 +275,8 @@ Method & (b) & (c) & (b) & (c) & (b) & (c) & (d) \\
 \midrule
 chance & .453 & .399 & .494 & .487 & .205 & .181 & .760 \\
 CAT & .579 & .439 & .543 & .538 & .413 & .136 & .751 \\
-Heur.-LR & .562 & .420 & .746 & .737 & .383 & .140 & .778 \\
-Guardian & .490 & .407 & .543 & .509 & .371 & .142 & .767 \\
+Heur.-LR & .562 & .420 & .745 & .737 & .383 & .140 & .778 \\
+Guardian & .490 & .406 & .543 & .509 & .371 & .142 & .767 \\
 TrustGuard & .561 & .453 & .531 & .503 & \textbf{.523} & .235 & .744 \\
 TGN & .742 & .617 & .671 & .566 & .483 & .258 & \textbf{.784} \\
 \midrule
@@ -316,7 +316,7 @@ Dataset & Regime (strongest baseline) & \eviU{} & \eviV{} \\
 
 Table~\ref{tab:hard} keeps the positives fixed and replaces the negatives. On Epinions and CiaoDVD, CAT, Guardian, and TrustGuard collapse to within $0.13$ AP of chance on (b) and (c). Popularity reliance is therefore a property of the trust-GNN family, not of CAT alone. \eviV{} is the most robust method on both datasets. It reaches 0.783 / 0.662 on Epinions and 0.848 / 0.836 on CiaoDVD, i.e., $+0.20$ to $+0.31$ over CAT, and it is significantly above the strongest baseline in every seed (Table~\ref{tab:paired}).
 
-Two baselines are notably stronger than the rest. \emph{TGN}, which learns from the event stream with a node memory, reaches 0.742 / 0.617 on Epinions. That is significantly better than \eviU{} but below \eviV{} ($+0.041$ and $+0.045$, 3/3 seeds). \emph{Heuristic-LR} is strong on CiaoDVD (0.746 / 0.737), because under a random split the reverse edge of a test link is often in the training graph (31.7\% of observed test positives). \eviV{} still improves on it by $+0.10$ on both regimes. Even on the positives whose reverse edge is \emph{not} in the graph, \eviU{} keeps its lead under the CAT protocol (AP 0.967 vs.\ 0.958 for Heuristic-LR and 0.902 for CAT), so \evi{}'s advantage is not reciprocity alone.
+Two baselines are notably stronger than the rest. \emph{TGN}, which learns from the event stream with a node memory, reaches 0.742 / 0.617 on Epinions. That is significantly better than \eviU{} but below \eviV{} ($+0.041$ and $+0.045$, 3/3 seeds). \emph{Heuristic-LR} is strong on CiaoDVD (0.745 / 0.737), because under a random split the reverse edge of a test link is often in the training graph (31.7\% of observed test positives). \eviV{} still improves on it by $+0.10$ on both regimes. Even on the positives whose reverse edge is \emph{not} in the graph, \eviU{} keeps its lead under the CAT protocol (AP 0.967 vs.\ 0.958 for Heuristic-LR and 0.902 for CAT), so \evi{}'s advantage is not reciprocity alone.
 
 On wiki-RfA observed pairs the picture is mixed. TrustGuard is best on degree-matched negatives (0.523), significantly above both \evi{} variants. \eviV{} is best on two-hop negatives (0.352, $+0.093$ over TGN, 3/3). We discuss (d) in RQ5.
 
@@ -338,8 +338,8 @@ Co-review negatives are the clearest failure. They share exactly the behavioural
 Method & (e) & (f) & (e) & (f) & (e) & (f) \\
 \midrule
 CAT & .595 & .514 & .608 & .540 & .146 & .359 \\
-Heur.-LR & .635 & .517 & .761 & .740 & .137 & .344 \\
-Guardian & .582 & .504 & .567 & .542 & .171 & .407 \\
+Heur.-LR & .635 & .517 & .761 & .740 & .136 & .344 \\
+Guardian & .582 & .504 & .567 & .542 & .171 & .406 \\
 TrustGuard & .600 & .489 & .592 & .527 & .270 & \textbf{.496} \\
 TGN & \textbf{.772} & .559 & .701 & .665 & .268 & .444 \\
 \midrule
@@ -348,7 +348,7 @@ TGN & \textbf{.772} & .559 & .701 & .665 & .268 & .444 \\
 \midrule
 & \multicolumn{6}{c}{held-out regime, AP (strongest baseline)} \\
 V$-$c on (c) & \multicolumn{2}{c|}{.610 (TGN .616)} & \multicolumn{2}{c|}{\textbf{.759} (H-LR .737)} & \multicolumn{2}{c}{.240 (TGN .259)} \\
-V$-$b on (b) & \multicolumn{2}{c|}{\textbf{.763} (TGN .740)} & \multicolumn{2}{c|}{\textbf{.784} (H-LR .746)} & \multicolumn{2}{c}{.340 (TrustGuard .523)} \\
+V$-$b on (b) & \multicolumn{2}{c|}{\textbf{.763} (TGN .740)} & \multicolumn{2}{c|}{\textbf{.784} (H-LR .745)} & \multicolumn{2}{c}{.340 (TrustGuard .523)} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -366,7 +366,7 @@ Method & (a) & (b) & (c) & (a) & (b) & (c) \\
 CAT (uniform) & .938 & .579 & .439 & .944 & .543 & .538 \\
 CAT-H (mixed) & .894 & .635 & .493 & .881 & .532 & .514 \\
 TGN (uniform) & .859 & .742 & .617 & .929 & .671 & .566 \\
-TGN-H (mixed) & .816 & .761 & .650 & .914 & .682 & .584 \\
+TGN-H (mixed) & .816 & .760 & .650 & .914 & .682 & .584 \\
 \eviV{} (mixed) & \textbf{.938} & \textbf{.783} & \textbf{.662} & \textbf{.971} & \textbf{.848} & \textbf{.836} \\
 \midrule
 \eviV{} $-$ CAT-H & +.045 & +.149 & +.169 & +.090 & +.316 & +.322 \\
@@ -463,7 +463,7 @@ chance & .500 & .500 & & .500 & .500 & .796 \\
 CAT & .492 & .415 & .069 & .496 & .380 & .798 \\
 Heuristic-LR & .597 & .614 & .118 & .551 & .447 & .815 \\
 Guardian & .530 & .498 & .073 & .567 & .444 & .782 \\
-TrustGuard & .588 & .530 & .104 & .568 & .436 & .788 \\
+TrustGuard & .587 & .530 & .104 & .568 & .436 & .788 \\
 TGN & .679 & .738 & .093 & .655 & .467 & .804 \\
 \midrule
 \eviU{} & \textbf{.939} & \textbf{.938} & \textbf{.498} & .757 & .595 & \textbf{.822} \\
